@@ -12,6 +12,8 @@ class Movies extends React.Component {
     this.setState({ movies: movies });
   }
   render() {
+    if (this.state.movies.length === 0)
+      return <p>The are no movies in the database</p>;
     return (
       <table className="table">
         <thead>
