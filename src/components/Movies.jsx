@@ -9,6 +9,7 @@ class Movies extends React.Component {
     //console.log(movie);
     //movies is a new array that not contains movie
     const movies = this.state.movies.filter((m) => m._id !== movie._id);
+    this.setState({ movies: movies });
   }
   render() {
     return (
